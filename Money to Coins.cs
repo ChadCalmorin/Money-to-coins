@@ -22,17 +22,11 @@ namespace Shake_Your_Money_Maker
             decimal nickelRemainder;
             decimal penniesNeeded;
 
-
             Console.WriteLine("Welcome to shake your money maker");
             Console.WriteLine("This program will take your dollar amount and convert it into the least amount of coins needed\n");
             
-
-
             Console.WriteLine("Enter amount to convert into coins\n");
             
-
-            
-
             amountAsString = Console.ReadLine();
             amount = Convert.ToDecimal(amountAsString);
 
@@ -47,20 +41,11 @@ namespace Shake_Your_Money_Maker
 
             penniesNeeded = Math.Floor(nickelRemainder / penny);
 
-            
             Console.WriteLine($"\n${amount} in the least amount of coins will be: ");
             Console.WriteLine($"Quarters: {quartersNeeded}");
             Console.WriteLine($"Dimes: {dimesNeeded}");
             Console.WriteLine($"Nickels: {nickelsNeeded}");
             Console.WriteLine($"Pennies: {penniesNeeded}");
-
-
-
-
-
-
-
-
         }
     }
 }
